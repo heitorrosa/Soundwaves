@@ -11,7 +11,70 @@
 
 <style>
     html, head, body {
-        background-color: grey;
+        background-color: rgb(37, 37, 37);
+    }
+
+    .rubik-spray-paint-regular {
+  font-family: "Rubik Spray Paint", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+    }
+
+    nav {
+    align: center;
+    padding: 0px 15px;
+    margin: 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    }
+
+    nav h2 {
+        font-size: 23.6px;
+        font-weight: bold;
+    }
+
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    nav li {
+        list-style: none;
+    }
+
+    nav li a {
+        text-decoration: none;
+        font-weight: bold;
+        padding: 0px 10px;
+    }
+
+    nav li a:hover {
+        border-radius: 5px;
+    }
+
+    nav form {
+        padding: 0px 15px;
+        margin: 10px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav form input {
+        height: 100px;
+        background-color: white;
+        border-radius: 5px;
+
+    }
+
+    nav form button {
+        background-color: white;
+        border-radius: 5px;
+        font-weight: bold;
     }
 </style>
 <head>
@@ -24,10 +87,6 @@
        </table>
         </div>
 
-        <form>
-            <input type="text" placeholder="Pesquisar artista..." length="30" name="search">
-            <button type="submit">Pesquisar</button>
-        </form>
         <ul>
             <li style="color: white;"><a href=""><mark style="background-color: rgb(255, 0, 85);">Sobre nós 🤔</mark></a></li>
             <li style="color: white;"><a href=""><mark style="background-color: rgb(255, 0, 85);">Sugestôes</mark></a></li>
