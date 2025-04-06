@@ -6,8 +6,61 @@
 <title>Soundpedia - Inicio</title>
 
 <style>
-    html, head, body {
-        background-color: grey;
+    * {
+    }
+
+    nav {
+    align: center;
+    padding: 0px 15px;
+    margin: 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    }
+
+    nav h2 {
+        font-size: 23.6px;
+        font-weight: bold;
+    }
+
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    nav li {
+        list-style: none;
+    }
+
+    nav li a {
+        text-decoration: none;
+        font-weight: bold;
+        padding: 0px 10px;
+    }
+
+    nav li a:hover {
+        border-radius: 5px;
+    }
+
+    nav form {
+        padding: 0px 15px;
+        margin: 10px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav form input {
+        background-color: white;
+        border-radius: 5px;
+
+    }
+
+    nav form button {
+        background-color: white;
+        border-radius: 5px;
+        font-weight: bold;
     }
 </style>
 
@@ -15,6 +68,10 @@
     <nav>
         <h2>Soundpedia</h2>
 
+        <form>
+            <input type="text" placeholder="Pesquisar artista..." length="30" name="search">
+            <button type="submit">Pesquisar</button>
+        </form>
         <ul>
             <li><a href="">Sobre nós</a></li>
         </ul>
