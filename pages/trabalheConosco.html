@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="icon" href="../assets/BoraBillLogo.png" type="image/x-icon">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trabalhe Conosco</title>
+
+<style>
+    * {
+        background-color: #2b2b2b;
+        color: black;
+        font-family: system-ui;
+    }
+
+    .rubik-spray-paint-regular {
+        font-family: "Rubik Spray Paint", system-ui;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    nav {
+        padding: 0px 15px;
+        margin: 0px 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    nav li {
+        list-style: none;
+        color: white;
+    }
+    
+    nav li a {
+        text-decoration: none;
+        font-weight: bold;
+        padding: 0px 5px;
+    }
+
+    nav li mark {
+        background-color: rgb(139, 51, 81);
+        border-radius: 20px; 
+        padding: 5px 15px;
+    }
+
+    nav form {
+        padding: 0px 15px;
+        margin: 10px 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav form input {
+        background-color: rgb(139, 51, 81);
+        border: none;
+        padding: 5px 15px;
+        height: 25px;
+        width: 300px;
+        border-radius: 20px;
+
+    }
+
+    nav form input::placeholder {
+        color: black;
+        font-weight: bold;
+    }
+
+    nav form button {
+        background-color: rgb(139, 51, 81);
+        border: none;
+        padding: 5px 15px;
+        height: 35px;
+        margin: 0px 5px;
+        border-radius: 20px;
+        font-weight: bold;
+    }
+
+    .botaoEnviar {
+        background-color: rgb(51, 139, 91);
+        color: white;
+        border: none;
+        padding: 5px 15px;
+        height: 35px;
+        margin: 0px 5px;
+        border-radius: 20px;
+        font-weight: bold;
+    }
+
+</style>
+
+<head>
+    <nav name="barraNavegacao">
+        <table>
+        <tr>
+            <th><a href="../index.html"><img src="../assets/BoraBillLogo.png" width="60px"></a></th>
+            <th style="background-color: rgb(255, 0, 85); font-size: xx-large;border-radius: 15px; width: 200px;">SoundPedia</th>
+        </tr>
+       </table>
+
+        <form action="">
+            <input type="text" placeholder="Pesquise seu artista favorito aqui!">
+            <button type="submit">Pesquisar</button>
+        </form>
+
+        <ul>
+            <li><a href=""><mark>FAQ</mark></a></li>
+            <li><a href=""><mark>Trabalhe Conosco</mark></a></li>
+            <li><a href=""><mark>Sobre nós</mark></a></li>
+        </ul>
+    </nav>
+</head>
+
+<body>
+
+        <form>
+
+            <h2 style="color: white;">Venha trabalhar conosco!</h2>
+    
+            <label style="color: white;">Nome:</label><br>
+            <input style="background-color: white; width: 333px;" type="text" name="Nome" id="Nome" placeholder="Insira seu nome completo..." requried>
+    
+            <br><br>
+    
+            <label style="color: white;">Email:</label><br>
+            <input style="background-color: white; width: 333px;" type="email" name="email" id="email" placeholder="Soundpedia@gmail.com" requried>
+    
+            <br><br>
+    
+            <label style="color: white;">Telefone:</label><br>
+            <input style="background-color: white; width: 333px;" type="tel" name="tel" id="tel" placeholder="(12)3456-78910" requried>
+    
+            <br><br>
+    
+            <label style="color: white;">CPF:</label><br>
+            <input style="background-color: white; width: 333px;" type="text" name="CPF" id="CPF" placeholder="123456789-10" requried>
+    
+            <br><br><br>
+    
+            <label style="color: white;">Sexo:</label>
+            <input style="background-color: white;" type="radio" name="sexo" id="sexo" value="M" required> <a style="color: white;">M</a>
+            <input style="background-color: white;" type="radio" name="sexo" id="sexo" value="F" required> <a style="color: white;">F</a>
+    
+            <label style="color: white; padding-left: 15px;">Idade:</label>
+            <input style="background-color: white;" type="number" name="idade" id="idade" min="15" max="60" step="1" placeholder="15-60" required>
+    
+            <br>
+    
+            <label style="color: white;">Seu artista de interesse:</label><br>
+            <input style="background-color: white;" type="" name="artista" id="artista" placeholder="Kanye West..." required>
+    
+            <br><br>
+
+            <label style="color: white;">Porque deveriamos te escolher para esse emprego? (No mínimo 1000 caracteres)</label><br>
+            <textarea rows="10" style="background-color: white ;height: 300px; width: 500px;" min="1000" placeholder="Acredito que o emprego pode ser meu porquê..."></textarea>
+    
+            <br><br>
+    
+            <label style="color: white;">Anexe seus documentos legais para verificar sua identidade:</label><br>
+            <input style="color: white;" type="file" name="documentos" id="documentos">
+
+            <br><br>
+            
+            <input style="background-color: white;" type="checkbox" name="termosUso" id="termosUso" required> <a style="color: white">Você está ciente e concorda com nossos termos de uso para envio dessa aplicação de emprego?</a>
+    
+            <br><br>
+    
+            <button class="botaoEnviar">Envie seu formulário</button>
+        </form>
+
+</body>
+</html>
