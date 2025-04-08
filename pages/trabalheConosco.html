@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<link rel="icon" href="../assets/BoraBillLogo.png" type="image/x-icon">
+<link rel="icon" href="../assets/Logo.png" type="image/x-icon">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,12 +16,6 @@
         background-color: #2b2b2b;
         color: black;
         font-family: system-ui;
-    }
-
-    .rubik-spray-paint-regular {
-        font-family: "Rubik Spray Paint", system-ui;
-        font-weight: 400;
-        font-style: normal;
     }
 
     nav {
@@ -40,18 +34,6 @@
     nav li {
         list-style: none;
         color: white;
-    }
-    
-    nav li a {
-        text-decoration: none;
-        font-weight: bold;
-        padding: 0px 5px;
-    }
-
-    nav li mark {
-        background-color: rgb(139, 51, 81);
-        border-radius: 20px; 
-        padding: 5px 15px;
     }
 
     nav form {
@@ -76,8 +58,9 @@
         font-weight: bold;
     }
 
-    nav form button {
-        background-color: rgb(139, 51, 81);
+    .botaoEnviar {
+        background-color: rgb(51, 139, 91);
+        color: white;
         border: none;
         padding: 5px 15px;
         height: 35px;
@@ -86,11 +69,20 @@
         font-weight: bold;
     }
 
-    .botaoEnviar {
-        background-color: rgb(51, 139, 91);
-        color: white;
+    .botaoNavbar {
+        background-color: rgb(139, 51, 81);
         border: none;
-        padding: 5px 15px;
+        padding: 0px 15px;
+        height: 35px;
+        margin: 0px 5px;
+        border-radius: 20px;
+        font-weight: bold;
+    }
+
+    .botaoNavbar button.hover {
+        background-color: rgb(255, 0, 85);
+        border: none;
+        padding: 0px 15px;
         height: 35px;
         margin: 0px 5px;
         border-radius: 20px;
@@ -103,20 +95,20 @@
     <nav name="barraNavegacao">
         <table>
         <tr>
-            <th><a href="../index.html"><img src="../assets/BoraBillLogo.png" width="60px"></a></th>
+            <th><a href="../index.html"><img src="../assets/Logo.png" width="60px"></a></th>
             <th style="background-color: rgb(255, 0, 85); font-size: xx-large;border-radius: 15px; width: 200px;">SoundPedia</th>
         </tr>
        </table>
 
-        <form action="">
+        <form>
             <input type="text" placeholder="Pesquise seu artista favorito aqui!">
-            <button type="submit">Pesquisar</button>
+            <button class="botaoNavbar">Pesquisar</button>
         </form>
 
         <ul>
-            <li><a href=""><mark>FAQ</mark></a></li>
-            <li><a href=""><mark>Trabalhe Conosco</mark></a></li>
-            <li><a href=""><mark>Sobre nós</mark></a></li>
+            <li><a href=""><button class="botaoNavbar">FAQ</button></a></li>
+            <li><a href="../pages/trabalheConosco.html"><button class="botaoNavbar">Trabalhe Conosco</button></a></li>
+            <li><a href="../pages/sobreNos.html"><button class="botaoNavbar">Sobre nós</button></a></li>
         </ul>
     </nav>
 </head>
