@@ -53,6 +53,16 @@
 
     }
 
+    nav form input::selection {
+        background-color: rgb(255, 0, 85);
+        color: white;
+        border: none;
+        padding: 5px 15px;
+        height: 25px;
+        width: 300px;
+        border-radius: 20px;
+
+    }
     nav form input::placeholder {
         color: black;
         font-weight: bold;
@@ -79,14 +89,17 @@
         font-weight: bold;
     }
 
-    .botaoNavbar button.hover {
+    .botaoNavbar:hover {
         background-color: rgb(255, 0, 85);
+        box-shadow: #2b2b2b;
         border: none;
         padding: 0px 15px;
         height: 35px;
         margin: 0px 5px;
         border-radius: 20px;
         font-weight: bold;
+
+        transition-property: background-color, 3s;
     }
 
 </style>
@@ -159,11 +172,11 @@
             <br><br>
     
             <label style="color: white;">Anexe seus documentos legais para verificar sua identidade:</label><br>
-            <input style="color: white;" type="file" name="documentos" id="documentos">
+            <input style="color: white;" type="file" name="documentos" id="documentos" required>
 
             <br><br>
             
-            <input style="background-color: white;" type="checkbox" name="termosUso" id="termosUso" required> <a style="color: white">Você está ciente e concorda com nossos <a href="termosdeUso.html" style="color: rgb(255, 0, 85);">termos de uso</a> <a style="color: white;">para envio dessa aplicação de emprego?</a></a>
+            <input style="background-color: white;" type="checkbox" name="termosUso" id="termosUso" required> <a style="color: white">Você está ciente e concorda com nossos <a href="termosdeUso.html" style="color: rgb(255, 0, 85);">termos de uso</a> <a style="color: white;">para envio dessa aplicação?</a></a>
     
             <br><br>
     
