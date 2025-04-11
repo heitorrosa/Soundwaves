@@ -68,6 +68,9 @@
         font-weight: bold;
     }
 
+    form select option {
+        background-color: white;
+    }
     .botaoEnviar {
         background-color: rgb(51, 139, 91);
         color: white;
@@ -152,6 +155,11 @@
     
             <br><br><br>
     
+            <label style="color: white;">Data de Nascimento:</label>
+            <input style="background-color: white;" type="date" name="data" id="data">
+
+            <br><br>
+
             <label style="color: white;">Sexo:</label>
             <input style="background-color: white;" type="radio" name="sexo" id="sexo" value="M" required> <a style="color: white;">M</a>
             <input style="background-color: white;" type="radio" name="sexo" id="sexo" value="F" required> <a style="color: white;">F</a>
@@ -161,8 +169,15 @@
     
             <br>
     
-            <label style="color: white;">Seu artista de interesse:</label><br>
-            <input style="background-color: white;" type="" name="artista" id="artista" placeholder="Kanye West..." required>
+            <label for="curso" style="color: white;">Seu artista de interesse (até 2):</label><br>
+            <select name="curso" id="curso" style="background-color: white;">
+                    <option selected>Kanye West</option>
+                    <option>Palhaço Caçarola</option>
+                    <option>Tydus Tabott</option>
+                    <option>JayZ</option>
+                    <option>Taylor Swift</option>
+                    <option>???</option>
+            </select>
     
             <br><br>
 
