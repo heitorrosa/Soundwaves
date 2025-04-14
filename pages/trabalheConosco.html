@@ -131,7 +131,7 @@
 
 <body>
 
-        <form>
+        <form method="GET">
 
             <h1 style="color: white;">Venha trabalhar conosco!</h1>
     
@@ -177,7 +177,18 @@
                     <option>JayZ</option>
                     <option>Taylor Swift</option>
                     <option>???</option>
-            </select>
+            </select><br>
+
+            <label for="conhecimento" style="color: white;">Conhecimentos:</label><br>  
+            <input type="text" id="conhecimento" name="conhecimento" list="lista-conhecimentos" style="background-color: white;">
+
+            <datalist id="lista-conhecimentos" style="background-color: white;">
+                <option value="Layout de site">Layout de site</option>
+                <option value="Conhecimentos gerais sobre os artistas">Conhecimentos gerais sobre os artistas</option>
+                <option value="Programação (html e css)">Programação (html e css)</option>
+                <option value="Contador">Contador</option>
+                <option value="...">...</option>
+            </datalist>
     
             <br><br>
 
@@ -194,8 +205,8 @@
             <input style="background-color: white;" type="checkbox" name="termosUso" id="termosUso" required> <a style="color: white">Você está ciente e concorda com nossos <a href="termosdeUso.html" style="color: rgb(255, 0, 85);">termos de uso</a> <a style="color: white;">para envio dessa aplicação?</a></a>
     
             <br><br>
-    
-            <button class="botaoEnviar">Envie seu formulário</button>
+                
+            <input class="botaoEnviar" type="submit" name="btn" id="btnEnviar" value="Envie seu formulário!">
         </form>
 
 </body>
