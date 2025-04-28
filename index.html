@@ -3,6 +3,10 @@
 
 <link rel="icon" href="assets/Logo.png" type="image/x-icon">
 
+<link rel="stylesheet" href="pages/style/assets.css">
+<link rel="stylesheet" href="pages/style/pages/index.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
@@ -11,118 +15,52 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Soundpedia - Inicio</title>
 
-<style>
-    * {
-        background-color: #2b2b2b;
-        color: black;
-        font-family: system-ui;
-    }
-
-    nav {
-        padding: 0px 15px;
-        margin: 0px 0px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    nav ul {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    nav li {
-        list-style: none;
-        color: white;
-    }
-
-    nav form {
-        padding: 0px 15px;
-        margin: 10px 0px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    nav form input {
-        background-color: rgb(139, 51, 81);
-        border: none;
-        padding: 5px 15px;
-        height: 25px;
-        width: 300px;
-        border-radius: 20px;
-
-    }
-
-    nav form input::placeholder {
-        color: black;
-        font-weight: bold;
-    }
-
-    .botaoNavbar {
-        background-color: rgb(139, 51, 81);
-        border: none;
-        padding: 0px 15px;
-        height: 35px;
-        margin: 0px 5px;
-        border-radius: 20px;
-        font-weight: bold;
-    }
-
-    .botaoNavbar button.hover {
-        background-color: rgb(255, 0, 85);
-        border: none;
-        padding: 0px 15px;
-        height: 35px;
-        margin: 0px 5px;
-        border-radius: 20px;
-        font-weight: bold;
-    }
-
-</style>
-
 <head>
-    <nav name="barraNavegacao">
+    <header class="barraNavegacao">
         <table>
         <tr>
             <th><a href="../index.html"><img src="../assets/Logo.png" width="60px"></a></th>
-            <th style="background-color: rgb(255, 0, 85); font-size: xx-large;border-radius: 15px; width: 200px;">SoundPedia</th>
+            <th style="font-size: xx-large;border-radius: 15px; width: 200px;">SoundPedia</th>
         </tr>
        </table>
 
         <form>
             <input type="text" placeholder="Pesquise seu artista favorito aqui!">
-            <button class="botaoNavbar">Pesquisar</button>
+            <button>Pesquisar</button>
         </form>
 
         <ul>
-            <li><a href=""><button class="botaoNavbar">FAQ</button></a></li>
-            <li><a href="pages/trabalheConosco.html"><button class="botaoNavbar">Trabalhe Conosco</button></a></li>
-            <li><a href="pages/sobreNos.html"><button class="botaoNavbar">Sobre nós</button></a></li>
+            <li><a href=""><button>FAQ</button></a></li>
+            <li><a href="../pages/trabalheConosco.html"><button>Trabalhe Conosco</button></a></li>
+            <li><a href="../pages/sobreNos.html"><button>Sobre nós</button></a></li>
         </ul>
-    </nav>
+    </header>
 </head>
+
 <body>
     
-    <h2 align="center" style="padding-top: 100px; color:#eee">Saiba tudo sobre seus artistas favoritos aqui!</h2>
+    <h2 align="center" style="padding-top: 100px">Saiba tudo sobre seus artistas favoritos aqui!</h2>
 
-    <table align="center">
-        <tr name="tabelaArtistasImagens">
-            <td style="padding: 0 25px;"><a href="../pages/KanyePag.html"><img src="assets/KanyeWest.png" width="250" height="250"></a></td>
-            <td style="padding: 0 25px;"><a href="/pages/CacarolaPag.html"><img src="assets/Cacarola.png" width="250" height="250"></a></td>
-            <td style="padding: 0 25px;"><a href="/pages/TydusPag.html"><img src="assets/Tydus.jpg" width="250" height="250"></a></td>
-            <td style="padding: 0 25px;"><a href="/pages/JayzPag.html"><img src="assets/JayZ.png" width="250" height="250"></a></td>
-            <td style="padding: 0 25px;"><a href="/pages/TayPag.html"><img src="assets/TayTay.png" width="250" height="250"></a></td>
+    <table align="center" class="tabelaArtistasImagens">
+        <tr>
+            <td><a href="../pages/KanyePag.html"><img src="assets/KanyeWest.png" width="250" height="250"></a></td>
+            <td><a href="/pages/CacarolaPag.html"><img src="assets/Cacarola.png" width="250" height="250"></a></td>
+            <td><a href="/pages/TydusPag.html"><img src="assets/Tydus.jpg" width="250" height="250"></a></td>
+            <td><a href="/pages/JayzPag.html"><img src="assets/JayZ.png" width="250" height="250"></a></td>
+            <td><a href="/pages/TayPag.html"><img src="assets/TayTay.png" width="250" height="250"></a></td>
         </tr>
 
         <tr>
-            <td align="center"><h3 style="color: white;">Kanye West</h3></td> 
-            <td align="center"><h3 style="color: white;">Palhaço Caçarola</h3></td>
-            <td align="center"><h3 style="color: white;">Tydus Tabott</h3></td>
-            <td align="center"><h3 style="color: white;">Jay Z</h3></td>
-            <td align="center"><h3 style="color: white;">Taylor Swift</h3></td>
+            <td><h3>Kanye West</h3></td> 
+            <td><h3>Palhaço Caçarola</h3></td>
+            <td><h3>Tydus Tabott</h3></td>
+            <td><h3>Jay Z</h3></td>
+            <td><h3>Taylor Swift</h3></td>
         </tr>     
-    </table>        
-    <nav name="barraInfosEmpresa">      
-    </nav>
+    </table>   
+
+    <footer class="barraInfosEmpresa">
+
+    </footer>
 </body>
 </html>

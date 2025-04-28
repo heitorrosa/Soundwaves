@@ -3,6 +3,10 @@
 
 <link rel="icon" href="../assets/Logo.png" type="image/x-icon">
 
+<link rel="stylesheet" href="style/assets.css">
+<link rel="stylesheet" href="style/pages/trabalharConosco.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
@@ -12,164 +16,72 @@
 <title>Trabalhe Conosco</title>
 
 <style>
-    * {
-        background-color: #2b2b2b;
-        color: black;
-        font-family: system-ui;
-    }
-
-    nav {
-        padding: 0px 15px;
-        margin: 0px 0px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    nav ul {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    nav li {
-        list-style: none;
-        color: white;
-    }
-
-    nav form {
-        padding: 0px 15px;
-        margin: 10px 0px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    nav form input {
-        background-color: rgb(139, 51, 81);
-        border: none;
-        padding: 5px 15px;
-        height: 25px;
-        width: 300px;
-        border-radius: 20px;
-
-    }
-
-    nav form input::selection {
-        background-color: rgb(255, 0, 85);
-        color: white;
-        border: none;
-        padding: 5px 15px;
-        height: 25px;
-        width: 300px;
-        border-radius: 20px;
-
-    }
-    nav form input::placeholder {
-        color: black;
-        font-weight: bold;
-    }
-
-    form select option {
-        background-color: white;
-    }
-    .botaoEnviar {
-        background-color: rgb(51, 139, 91);
-        color: white;
-        border: none;
-        padding: 5px 15px;
-        height: 35px;
-        margin: 0px 5px;
-        border-radius: 20px;
-        font-weight: bold;
-    }
-
-    .botaoNavbar {
-        background-color: rgb(139, 51, 81);
-        border: none;
-        padding: 0px 15px;
-        height: 35px;
-        margin: 0px 5px;
-        border-radius: 20px;
-        font-weight: bold;
-    }
-
-    .botaoNavbar:hover {
-        background-color: rgb(255, 0, 85);
-        box-shadow: #2b2b2b;
-        border: none;
-        padding: 0px 15px;
-        height: 35px;
-        margin: 0px 5px;
-        border-radius: 20px;
-        font-weight: bold;
-
-        transition-property: background-color, 3s;
-    }
 
 </style>
 
 <head>
-    <nav name="barraNavegacao">
+    <header class="barraNavegacao">
         <table>
         <tr>
             <th><a href="../index.html"><img src="../assets/Logo.png" width="60px"></a></th>
-            <th style="background-color: rgb(255, 0, 85); font-size: xx-large;border-radius: 15px; width: 200px;">SoundPedia</th>
+            <th style="font-size: xx-large;border-radius: 15px; width: 200px;">SoundPedia</th>
         </tr>
        </table>
 
         <form>
             <input type="text" placeholder="Pesquise seu artista favorito aqui!">
-            <button class="botaoNavbar">Pesquisar</button>
+            <button>Pesquisar</button>
         </form>
 
         <ul>
-            <li><a href=""><button class="botaoNavbar">FAQ</button></a></li>
-            <li><a href="../pages/trabalheConosco.html"><button class="botaoNavbar">Trabalhe Conosco</button></a></li>
-            <li><a href="../pages/sobreNos.html"><button class="botaoNavbar">Sobre nós</button></a></li>
+            <li><a href=""><button>FAQ</button></a></li>
+            <li><a href="../pages/trabalheConosco.html"><button>Trabalhe Conosco</button></a></li>
+            <li><a href="../pages/sobreNos.html"><button>Sobre nós</button></a></li>
         </ul>
-    </nav>
+    </header>
 </head>
 
 <body>
 
-        <form method="GET">
+        <form method="GET" class="trabalharConosco">
 
-            <h1 style="color: white;">Venha trabalhar conosco!</h1>
+            <h1>Venha trabalhar conosco!</h1>
     
-            <label style="color: white;">Nome:</label><br>
-            <input style="background-color: white; width: 333px;" type="text" name="Nome" id="Nome" placeholder="Insira seu nome completo..." requried>
-    
-            <br><br>
-    
-            <label style="color: white;">Email:</label><br>
-            <input style="background-color: white; width: 333px;" type="email" name="email" id="email" placeholder="Soundpedia@gmail.com" requried>
+            <label>Nome:</label><br>
+            <input style="width: 333px;" type="text" name="Nome" id="Nome" placeholder="Insira seu nome completo..." requried>
     
             <br><br>
     
-            <label style="color: white;">Telefone:</label><br>
-            <input style="background-color: white; width: 333px;" type="tel" name="tel" id="tel" placeholder="(12)3456-78910" requried>
+            <label>Email:</label><br>
+            <input style="width: 333px;" type="email" name="email" id="email" placeholder="Soundpedia@gmail.com" requried>
     
             <br><br>
     
-            <label style="color: white;">CPF:</label><br>
-            <input style="background-color: white; width: 333px;" type="text" name="CPF" id="CPF" placeholder="123456789-10" requried>
+            <label>Telefone:</label><br>
+            <input style="width: 333px;" type="tel" name="tel" id="tel" placeholder="(12)3456-78910" requried>
+    
+            <br><br>
+    
+            <label>CPF:</label><br>
+            <input style="width: 333px;" type="text" name="CPF" id="CPF" placeholder="123456789-10" requried>
     
             <br><br><br>
     
-            <label style="color: white;">Data de Nascimento:</label>
-            <input style="background-color: white;" type="date" name="data" id="data">
+            <label>Data de Nascimento:</label>
+            <input type="date" name="data" id="data">
 
             <br><br>
 
-            <label style="color: white;">Sexo:</label>
-            <input style="background-color: white;" type="radio" name="sexo" id="sexo" value="M" required> <a style="color: white;">M</a>
-            <input style="background-color: white;" type="radio" name="sexo" id="sexo" value="F" required> <a style="color: white;">F</a>
+            <label>Sexo:</label>
+            <input type="radio" name="sexo" id="sexo" value="M" required> <a>M</a>
+            <input type="radio" name="sexo" id="sexo" value="F" required> <a>F</a>
     
             <label style="color: white; padding-left: 15px;">Idade:</label>
-            <input style="background-color: white;" type="number" name="idade" id="idade" min="15" max="60" step="1" placeholder="15-60" required>
+            <input type="number" name="idade" id="idade" min="15" max="60" step="1" placeholder="15-60" required>
     
             <br>
     
-            <label for="curso" style="color: white;">Seu artista de interesse (até 2):</label><br>
+            <label for="curso">Seu artista de interesse (até 2):</label><br>
             <select name="curso" id="curso" style="background-color: white;">
                     <option selected>Kanye West</option>
                     <option>Palhaço Caçarola</option>
@@ -179,7 +91,7 @@
                     <option>???</option>
             </select><br>
 
-            <label for="conhecimento" style="color: white;">Conhecimentos:</label><br>  
+            <label for="conhecimento">Conhecimentos:</label><br>  
             <input type="text" id="conhecimento" name="conhecimento" list="lista-conhecimentos" style="background-color: white;">
 
             <datalist id="lista-conhecimentos" style="background-color: white;">
@@ -192,17 +104,17 @@
     
             <br><br>
 
-            <label style="color: white;">Porque deveriamos te escolher para esse emprego? (No mínimo 1000 caracteres)</label><br>
+            <label>Porque deveriamos te escolher para esse emprego? (No mínimo 1000 caracteres)</label><br>
             <textarea rows="10" style="background-color: white ;height: 300px; width: 500px;" min="1000" placeholder="Acredito que o emprego pode ser meu porquê..."></textarea>
     
             <br><br>
     
-            <label style="color: white;">Anexe seus documentos legais para verificar sua identidade:</label><br>
-            <input style="color: white;" type="file" name="documentos" id="documentos" required>
+            <label>Anexe seus documentos legais para verificar sua identidade:</label><br>
+            <input style="background-color: #e7faeb;" type="file" name="documentos" id="documentos" required>
 
             <br><br>
             
-            <input style="background-color: white;" type="checkbox" name="termosUso" id="termosUso" required> <a style="color: white">Você está ciente e concorda com nossos <a href="termosdeUso.html" style="color: rgb(255, 0, 85);">termos de uso</a> <a style="color: white;">para envio dessa aplicação?</a></a>
+            <input type="checkbox" name="termosUso" id="termosUso" required> <a>Você está ciente e concorda com nossos <a href="termosdeUso.html" style="color: rgb(255, 0, 85);">termos de uso</a> <a>para envio dessa aplicação?</a></a>
     
             <br><br>
                 
