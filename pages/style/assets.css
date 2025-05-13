@@ -1,66 +1,49 @@
 * {
-    background-color: #e7faeb;
-    color: black;
+    background-color: #BFC3BA;
+    color: white;
     font-family: system-ui;
 }
 
 .barraNavegacao {
-    padding: 0px 15px;
-    margin: 0px 0px;
+    width: 23%;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    background-color: #96989b;
+    padding: 5px 15px;
+    margin: 0 auto;
+    align-items: center;
     display: flex;
     justify-content: space-between;
 }
 
 .barraNavegacao ul {
+    background-color: #96989b;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.barraNavegacao li {
     list-style: none;
 }
 
-.barraNavegacao form {
-    padding: 0px 15px;
-    margin: 10px 0px;
-    display: flex;
-    justify-content: space-between;
+.barraNavegacao ul li {
+    background-color: #96989b;
 }
 
-.barraNavegacao form input {
-    background-color: #2e6f40;
-    border: none;
-    padding: 5px 15px;
-    height: 35px;
-    width: 300px;
-    border-radius: 20px;
-
-}
-
-.barraNavegacao form input::placeholder {
-    color: black;
-    font-weight: bold;
-}
-
-.barraNavegacao form input:hover {
-    transform: scale(1.05);
-    background-color: #68ba7f;
-    transition: transform 250ms, background-color 250ms;
+.barraNavegacao ul li a {
+    background-color: #96989b;
 }
 
 .barraNavegacao button {
-    background-color: #2e6f40;
+    background-color: #60495A;
     border: none;
     padding: 0px 15px;
     height: 35px;
     margin: 0px 5px;
     border-radius: 20px;
     font-weight: bold;
+    
+
 }
 
 .barraNavegacao button:hover {
-    background-color: #68ba7f;
+    background-color: #3f3244;
     box-shadow: #2b2b2b;
     border: none;
     padding: 0px 15px;
@@ -70,5 +53,20 @@
     font-weight: bold;
 
     transform: scale(1.05);
+    transition: transform 250ms;
+}
+
+.barraNavegacao #logo {
+    background-color: #96989b;
+}
+.barraNavegacao #logo img {
+    background-color: #96989b;
+    width: 66px;
+    height: 66px;
+}
+
+.barraNavegacao #logo img:hover {
+    background-color: #96989b;
+    transform: scale(0.82);
     transition: transform 250ms;
 }
