@@ -75,10 +75,6 @@
     transition: transform 250ms;
 }
 
-.barraNavegacao #logo img:hover + #logoTexto {
-    display: block;
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    margin-left: 10px;
+.barraNavegacao #logo img:hover #logoTexto {
+    display: flex;
 }
