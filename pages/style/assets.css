@@ -5,11 +5,11 @@
 }
 
 .barraNavegacao {
-    width: 23%;
+    width: 30%;
     border: 1px solid transparent;
-    border-radius: 25px;
+    border-radius: 33px;
     background-color: #96989b;
-    padding: 5px 15px;
+    padding: 0px 15px;
     margin: 0 auto;
     align-items: center;
     display: flex;
@@ -78,3 +78,46 @@
 .barraNavegacao #logo img:hover #logoTexto {
     display: flex;
 }
+
+        .image-container {
+            background-color: #96989b;
+            display: flex;
+            align-items: center;
+            margin: 20px;
+        }
+        
+        .hover-image {
+            background-color: #96989b;
+            width: 66px;
+            height: 66px;
+            object-fit: cover;
+            transition: all 0.3s ease;
+        }
+        
+        .hover-text {
+            background-color: #96989b;
+            margin-left: 20px;
+            opacity: 0;
+            width: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        
+        .image-wrapper:hover .hover-text {
+            background-color: #96989b;
+            opacity: 1;
+            width: 125px;
+        }
+
+        .image-wrapper:hover .hover-image {
+            transform: scale(0.82);
+        }
+        
+        .image-wrapper {
+            background-color: #96989b;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
