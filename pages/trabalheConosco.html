@@ -1,48 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<link rel="icon" href="../assets/Logo.png" type="image/x-icon">
+<link rel="icon" href="assets/logo.png" type="image/x-icon">
 
 <link rel="stylesheet" href="style/assets.css">
-<link rel="stylesheet" href="style/pages/trabalharConosco.css">
+<link rel="stylesheet" href="style/pages/index.css">
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Trabalhe Conosco</title>
 
-<style>
-
-</style>
+<title>SoundWaves</title>
 
 <head>
     <header class="barraNavegacao">
-        <table>
-        <tr>
-            <th><a href="../index.html"><img src="../assets/Logo.png" width="60px"></a></th>
-            <th style="font-size: xx-large;border-radius: 15px; width: 200px;">SoundPedia</th>
-        </tr>
-       </table>
-
-        <form>
-            <input type="text" placeholder="Pesquise seu artista favorito aqui!">
-            <button>Pesquisar</button>
-        </form>
+        <div class="image-container">
+            <div class="image-wrapper">
+                <a href="../index.html"><img src="../assets/logo.png" alt="SoundWaves" class="hover-image"></a>
+                <div class="hover-text">
+                    <h3 style="background-color: #96989b; line-height: 0px;">SoundWaves</h3>
+                    <a style="background-color: #96989b">Tudo sobre seus artistas em um só lugar.</a>
+                </div>
+            </div>
+        </div>
 
         <ul>
-            <li><a href=""><button>FAQ</button></a></li>
-            <li><a href="../pages/trabalheConosco.html"><button>Trabalhe Conosco</button></a></li>
-            <li><a href="../pages/sobreNos.html"><button>Sobre nós</button></a></li>
+            <li><a href="faq.html"><button>FAQ</button></a></li>
+            <li><a href="trabalheConosco.html"><button>Trabalhe Conosco</button></a></li>
+            <li><a href="sobreNos.html"><button>Sobre nós</button></a></li>
         </ul>
     </header>
 </head>
 
 <body>
-
+    <div style="padding-top: 8%"></div>
         <form method="GET" class="trabalharConosco">
 
             <h1>Venha trabalhar conosco!</h1>
@@ -121,5 +116,27 @@
             <input class="botaoEnviar" type="submit" name="btn" id="btnEnviar" value="Envie seu formulário!">
         </form>
 
+    <div style="padding-bottom: 5%"></div>
 </body>
+
+<footer class="barraFooter">
+    <p style="font-weight: bold; line-height: 0px;">SoundWaves &copy; 2025 - Feito por <a href="https://github.com/PedroHCiolfi">PedroHCiolfi</a> e <a href="https://github.com/heitorrosa">heitorrosa</a></p>
+
+    <ul>
+        <li><a href="termosdeUso.html">Termos de Uso</a></li>
+        |
+        <li><a href="politicaDePrivacidade.html">Política de Privacidade</a></li>
+        |
+        <li><a href="faq.html">FAQ</a></li>
+    </ul>
+
+    <div id="logo-footer">
+        <img src="../assets/logo.png" alt="SoundWaves">
+        <img src="../assets/github.png" alt="Github">
+        <img src="../assets/cotil.png" alt="Cotil">
+        <img src="../assets/unicamp.png" alt="Unicamp">
+        <img src="../assets/governoChines.png" alt="Governo Chinês">
+    </div>
+</footer>
+
 </html>
