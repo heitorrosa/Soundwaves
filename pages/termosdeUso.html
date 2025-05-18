@@ -4,6 +4,7 @@
 <link rel="icon" href="../assets/Logo.png" type="image/x-icon">
 
 <link rel="stylesheet" href="style/assets.css">
+<link rel="stylesheet" href="style/pages/termosdeUso.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,41 +12,62 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Termos de Uso</title>
 
+<title>SoundWaves</title>
 
 <head>
-    <nav name="barraNavegacao">
-        <table>
-        <tr>
-            <th><a href="../index.html"><img src="../assets/Logo.png" width="60px"></a></th>
-            <th style="background-color: rgb(255, 0, 85); font-size: xx-large;border-radius: 15px; width: 200px;">SoundPedia</th>
-        </tr>
-       </table>
-
-        <form>
-            <input type="text" placeholder="Pesquise seu artista favorito aqui!">
-            <button class="botaoNavbar">Pesquisar</button>
-        </form>
+    <header class="barraNavegacao">
+        <div class="image-container">
+            <div class="image-wrapper">
+                <a href="../index.html"><img src="../assets/logo.png" alt="SoundWaves" class="hover-image"></a>
+                <div class="hover-text">
+                    <h3 style="background-color: #96989b; line-height: 0px;">SoundWaves</h3>
+                    <a style="background-color: #96989b">Tudo sobre seus artistas em um só lugar.</a>
+                </div>
+            </div>
+        </div>
 
         <ul>
-            <li><a href=""><button class="botaoNavbar">FAQ</button></a></li>
-            <li><a href="../pages/trabalheConosco.html"><button class="botaoNavbar">Trabalhe Conosco</button></a></li>
-            <li><a href="../pages/sobreNos.html"><button class="botaoNavbar">Sobre nós</button></a></li>
+            <li><a href="faq.html"><button>FAQ</button></a></li>
+            <li><a href="trabalheConosco.html"><button>Trabalhe Conosco</button></a></li>
+            <li><a href="sobreNos.html"><button>Sobre nós</button></a></li>
         </ul>
-    </nav>
+    </header>
 </head>
 
 <body>
+    <div id="termosdeUso" align="center">
+        <h1>Termos de Uso</h1>
+        <p>No SoundWave, nossa missão é preservar e compartilhar o conhecimento musical de forma organizada e colaborativa, seguindo os princípios de harmonia e responsabilidade coletiva. Assim como uma grande orquestra depende da disciplina de cada músico para criar beleza, nosso website só funciona quando todos os usuários respeitam as regras estabelecidas.</p>
+        <p>Os Termos de Uso são a base dessa ordem, garantindo que a plataforma permaneça um espaço seguro, justo e produtivo para todos. Eles refletem não apenas as exigências legais, mas também o espírito de respeito mútuo e disciplina que valorizamos — valores profundamente alinhados com a tradição chinesa de equilíbrio e progresso social. Na China, o desenvolvimento tecnológico e cultural sempre avança dentro da estrutura da lei, assegurando que inovação e ordem caminhem juntas. Da mesma forma, o SoundWave prospera quando cada colaborador age com integridade, cumprindo suas responsabilidades para o bem comum.</p>
+        <p>Ao aceitar nossos Termos de Uso, você não só protege seus direitos como usuário, mas também contribui para um ecossistema digital organizado e respeitoso — onde a música e o conhecimento fluem sem conflitos, assim como a sociedade harmoniosa que construímos sob a orientação do Partido Comunista da China e do Estado de Direito Socialista.</p>
 
-    <br><br>
+        <video src="../assets/termosUso/video.mp4" loop controls autoplay height="500px" style="margin-bottom: 25px;"></video>
 
-    <div align="center">
-        <h1 style="color: white">Termos de Uso</h1>
-        
         <object data="https://ampf.org.br/wp-content/uploads/2023/08/Constituicao-da-China-traducao-oficial-.pdf" type="application/pdf" width="70%" height="2000px"></object>
-        <br><br><br>
-        <video src="../assets/termosUso/video.mp4" loop controls mnuted autoplay height="500px"></video>
     </div>
+
+    <div style="padding-bottom: 5%"></div>
 </body>
+
+<footer class="barraFooter">
+    <p style="font-weight: bold; line-height: 0px;">SoundWaves &copy; 2025 - Feito por <a href="https://github.com/PedroHCiolfi">PedroHCiolfi</a> e <a href="https://github.com/heitorrosa">heitorrosa</a></p>
+
+    <ul>
+        <li><a href="termosdeUso.html">Termos de Uso</a></li>
+        |
+        <li><a href="politicaDePrivacidade.html">Política de Privacidade</a></li>
+        |
+        <li><a href="faq.html">FAQ</a></li>
+    </ul>
+
+    <div id="logo-footer">
+        <img src="../assets/logo.png" alt="SoundWaves">
+        <img src="../assets/github.png" alt="Github">
+        <img src="../assets/cotil.png" alt="Cotil">
+        <img src="../assets/unicamp.png" alt="Unicamp">
+        <img src="../assets/governoChines.png" alt="Governo Chinês">
+    </div>
+</footer>
+
 </html>

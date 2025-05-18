@@ -1,4 +1,14 @@
-.tabelaArtistasImagens tr td{
-    padding: 0 25px;
+#infoSite * {
+    line-height: 5px;
+}
+#infoSite {
     text-align: center;
+    padding-top: 150px;
+    margin: 20px 0;
+}
+
+#infoSite img {
+    width: 188px;
+    height: 188px;
+    border-radius: 50%;
 }

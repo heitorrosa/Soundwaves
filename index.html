@@ -13,13 +13,14 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SoundWaves - Inicio</title>
+
+<title>SoundWaves</title>
 
 <head>
     <header class="barraNavegacao">
         <div class="image-container">
             <div class="image-wrapper">
-                <img src="assets/logo.png" alt="SoundWaves" class="hover-image">
+                <a href="index.html"><img src="assets/logo.png" alt="SoundWaves" class="hover-image"></a>
                 <div class="hover-text">
                     <h3 style="background-color: #96989b; line-height: 0px;">SoundWaves</h3>
                     <a style="background-color: #96989b">Tudo sobre seus artistas em um só lugar.</a>
@@ -28,7 +29,7 @@
         </div>
 
         <ul>
-            <li><a href=""><button>FAQ</button></a></li>
+            <li><a href="pages/faq.html"><button>FAQ</button></a></li>
             <li><a href="pages/trabalheConosco.html"><button>Trabalhe Conosco</button></a></li>
             <li><a href="pages/sobreNos.html"><button>Sobre nós</button></a></li>
         </ul>
@@ -36,20 +37,33 @@
 </head>
 
 <body>
+    <div id="infoSite">
+        <img src="assets/logo.png" alt="SoundWaves">
+        <h1>SoundWaves</h1>
+        <p>Bem-vindo ao SoundWaves, venha conhecer tudo sobre seus artistas favoritos aqui!</p>
+    </div>
 
-    <footer class="barraFooter">
-        <p>SoundWaves &copy; 2025 - Feito por <a href="https://github.com/PedroHCiolfi">PedroHCiolfi</a> e <a href="https://github.com/heitorrosa">heitorrosa</a></p>
-
-        <ul>
-            <li><a href="">Termos de Uso</a></li>
-            <li><a href="">Política de Privacidade</a></li>
-        </ul>
-
-        <div id="logo-footer">
-            <img src="assets/logo.png" alt="SoundWaves">
-            <img src="assets/logo.png" alt="SoundWaves">
-            <img src="assets/logo.png" alt="SoundWaves">
-        </div>
-    </footer>
+    <div style="padding-bottom: 5%"></div>
 </body>
+
+<footer class="barraFooter">
+    <p style="font-weight: bold; line-height: 0px;">SoundWaves &copy; 2025 - Feito por <a href="https://github.com/PedroHCiolfi">PedroHCiolfi</a> e <a href="https://github.com/heitorrosa">heitorrosa</a></p>
+
+    <ul>
+        <li><a href="pages/termosdeUso.html">Termos de Uso</a></li>
+        |
+        <li><a href="pages/politicaDePrivacidade.html">Política de Privacidade</a></li>
+        |
+        <li><a href="pages/faq.html">FAQ</a></li>
+    </ul>
+
+    <div id="logo-footer">
+        <img src="assets/logo.png" alt="SoundWaves">
+        <img src="assets/github.png" alt="Github">
+        <img src="assets/cotil.png" alt="Cotil">
+        <img src="assets/unicamp.png" alt="Unicamp">
+        <img src="assets/governoChines.png" alt="Governo Chinês">
+    </div>
+</footer>
+
 </html>

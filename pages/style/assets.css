@@ -95,7 +95,7 @@
 }
 
 .barraNavegacao .image-wrapper:hover .hover-image {
-    transform: scale(0.82);
+    transform: scale(0.9);
 }
 
 .barraNavegacao .image-wrapper {
@@ -104,18 +104,17 @@
     align-items: center;
     cursor: pointer;
 }
-
-
 /* -------------------------------------------------- */
 
 .barraFooter {
     background-color: #96989b;
     padding: 10px 0;
-    width: 100%;
+    width: auto;
 
     position: absolute;
+    left: auto;
     bottom: auto;
-
+    width: 99%;
 }
 
 .barraFooter * {
@@ -138,6 +137,8 @@
 }
 
 .barraFooter #logo-footer * {
+    padding-top: 10px;
+    margin: 0px 10px;
     width: 44px;
     height: 44px;
 }
