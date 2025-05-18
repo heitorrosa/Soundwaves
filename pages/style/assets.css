@@ -1,33 +1,36 @@
 * {
     background-color: #BFC3BA;
+    text-shadow: 2px 1px 1px #2f2235;
     color: white;
     font-family: system-ui;
 }
 
 .barraNavegacao {
-    width: 30%;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    right: 0;
+
+    width: 36%;
     border: 1px solid transparent;
-    border-radius: 33px;
+    border-radius: 66px;
     background-color: #96989b;
-    padding: 0px 15px;
+ 
+    padding: 0px 5px;
     margin: 0 auto;
     align-items: center;
     display: flex;
     justify-content: space-between;
 }
 
+.barraNavegacao * {
+    background-color: #96989b;
+}
+
 .barraNavegacao ul {
     background-color: #96989b;
     display: flex;
     list-style: none;
-}
-
-.barraNavegacao ul li {
-    background-color: #96989b;
-}
-
-.barraNavegacao ul li a {
-    background-color: #96989b;
 }
 
 .barraNavegacao button {
@@ -38,8 +41,7 @@
     margin: 0px 5px;
     border-radius: 20px;
     font-weight: bold;
-    
-
+    cursor: pointer;
 }
 
 .barraNavegacao button:hover {
@@ -51,73 +53,91 @@
     border-radius: 20px;
     font-weight: bold;
     box-shadow: 2px 2px 5px #3c3e41;
+    cursor: pointer;
 
-    transform: scale(1.05);
+    transform: scale(1.15);
     transition: transform 250ms;
 }
 
-.barraNavegacao #logoTexto {
-    display: none;
+.barraNavegacao .image-container {
+    background-color: #96989b;
+    display: flex;
+    align-items: center;
+    margin: 20px;
 }
 
-.barraNavegacao #logo {
-    background-color: #96989b;
-}
-.barraNavegacao #logo img {
+.barraNavegacao .hover-image {
     background-color: #96989b;
     width: 66px;
     height: 66px;
+    object-fit: cover;
+    transition: all 0.3s ease;
 }
 
-.barraNavegacao #logo img:hover {
+.barraNavegacao .hover-text {
     background-color: #96989b;
+    margin-left: 20px;
+    opacity: 0;
+    width: 195px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-20px);
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.barraNavegacao .image-wrapper:hover .hover-text {
+    background-color: #96989b;
+    opacity: 1;
+    width: 195px;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(0);
+}
+
+.barraNavegacao .image-wrapper:hover .hover-image {
     transform: scale(0.82);
-    transition: transform 250ms;
 }
 
-.barraNavegacao #logo img:hover #logoTexto {
+.barraNavegacao .image-wrapper {
+    background-color: #96989b;
     display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
-        .image-container {
-            background-color: #96989b;
-            display: flex;
-            align-items: center;
-            margin: 20px;
-        }
-        
-        .hover-image {
-            background-color: #96989b;
-            width: 66px;
-            height: 66px;
-            object-fit: cover;
-            transition: all 0.3s ease;
-        }
-        
-        .hover-text {
-            background-color: #96989b;
-            margin-left: 20px;
-            opacity: 0;
-            width: 0;
-            overflow: hidden;
-            transition: all 0.3s ease;
-            font-family: Arial, sans-serif;
-            color: #333;
-        }
-        
-        .image-wrapper:hover .hover-text {
-            background-color: #96989b;
-            opacity: 1;
-            width: 125px;
-        }
 
-        .image-wrapper:hover .hover-image {
-            transform: scale(0.82);
-        }
-        
-        .image-wrapper {
-            background-color: #96989b;
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-        }
+/* -------------------------------------------------- */
+
+.barraFooter {
+    background-color: #96989b;
+    padding: 10px 0;
+    width: 100%;
+
+    position: absolute;
+    bottom: auto;
+
+}
+
+.barraFooter * {
+    background-color: #96989b;
+    text-shadow: 2px 1px 1px #2f2235;
+    color: white;
+    font-family: system-ui;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.barraFooter ul {
+    display: flex;
+    list-style: none;
+}
+
+.barraFooter ul li {
+    margin: 0 10px;
+}
+
+.barraFooter #logo-footer * {
+    width: 44px;
+    height: 44px;
+}
