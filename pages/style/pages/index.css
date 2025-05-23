@@ -12,3 +12,28 @@
     height: 188px;
     border-radius: 50%;
 }
+
+.cardArtistas * {
+    text-align: center;
+    color: white;
+    background-color: #60495A;
+}
+
+.cardArtistas {
+    background-color: #60495A;
+    border-radius: 33px;
+    border: 1px solid transparent;
+    
+    margin: 0 25px;
+
+    width: 350px;
+    height: 450px;
+}
+
+.cardArtistas p {
+    font-size: 20px;
+    font-weight: bold;
+
+    border: transparent;
+    border-radius: 33px;
+}
