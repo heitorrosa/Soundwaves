@@ -60,7 +60,7 @@
     transition: transform 333ms;
 }
 
-.gridArtistas #cardArtistas p {
+.gridArtistas #cardArtistas #titulo {
     font-size: 20px;
     font-weight: bold;
 
@@ -68,6 +68,16 @@
     border-radius: 100px;
 }
 
+.gridArtistas #cardArtistas p {
+    font-size: 16px;
+    font-weight: bold;
+
+    border: transparent;
+    border-radius: 100px;
+
+    text-align: center;
+    padding: 0px 10px;
+}
 .gridArtistas #cardArtistas img {
     border-radius: 100%;
     border: 1px solid transparent;
