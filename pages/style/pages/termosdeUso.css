@@ -1,5 +1,5 @@
 #termosdeUso {
-    padding-top: 10%; 
+    padding-top: 10%;
 }
 
 #termosdeUso h1 {
@@ -22,6 +22,6 @@
 }
 
 #termosdeUso fieldset p {
-    font-size: 18px;
+    font-size: 1.2rem;
     text-align: justify;
 }

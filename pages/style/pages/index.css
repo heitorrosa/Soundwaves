@@ -1,3 +1,5 @@
+/* Estilos para o cabeçalho */
+
 #infoSite * {
     line-height: 5px;
 }
@@ -13,42 +15,52 @@
     border-radius: 50%;
 }
 
-.cardArtistas * {
-    text-align: center;
-    align-items: center;
-    
-    justify-content: center;
+/* Estilos para a grade de artistas */
+
+.gridArtistas {
+    width: 75%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+
     justify-items: center;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto;
+}
+.gridArtistas #cardArtistas * {
     color: white;
     background-color: #60495A;
 }
 
-.cardArtistas {
+.gridArtistas #cardArtistas {
     background-color: #60495A;
     border-radius: 33px;
     border: 1px solid transparent;
     
-    margin: 0 15px;
-
     width: 350px;
     height: 450px;
+    
+    justify-items: center;
 }
 
-.cardArtistas:hover {
+.gridArtistas #cardArtistas:hover {
     border: 1px solid transparent;
     box-shadow: 2px 2px 5px #3c3e41;
     cursor: pointer;
 
     transform:
         perspective(5000px)
-        rotateY(10deg)
+        rotateY(17deg)
         rotateX(10deg)
         scale(1.15);
 
     transition: transform 333ms;
 }
 
-.cardArtistas p {
+.gridArtistas #cardArtistas p {
     font-size: 20px;
     font-weight: bold;
 
@@ -56,7 +68,10 @@
     border-radius: 100px;
 }
 
-.cardArtistas img {
-    width: 200px;
-    height: 200px;
+.gridArtistas #cardArtistas img {
+    border-radius: 100%;
+    border: 1px solid transparent;
+    
+    width: 250px;
+    height: 250px;
 }
