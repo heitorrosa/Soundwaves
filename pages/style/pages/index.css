@@ -37,8 +37,8 @@
 
 .gridArtistas #cardArtistas {
     background-color: #60495A;
-    border-radius: 33px;
     border: 1px solid transparent;
+    border-radius: 33px;
     
     width: 350px;
     height: 450px;
@@ -91,7 +91,7 @@
 .gridArtistas #cardArtistas .porta-retrato img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* ou 'contain' para ver imagem inteira */
+    object-fit: cover;
     object-position: 50% 50%; /* Controla a área visível */
     position: absolute;
 
