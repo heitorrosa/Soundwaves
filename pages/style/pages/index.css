@@ -78,10 +78,23 @@
     text-align: center;
     padding: 0px 10px;
 }
-.gridArtistas #cardArtistas img {
+.gridArtistas #cardArtistas .porta-retrato {
     border-radius: 100%;
     border: 1px solid transparent;
     
+    overflow: hidden;
+    position: relative;
     width: 250px;
     height: 250px;
+}
+
+.gridArtistas #cardArtistas .porta-retrato img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ou 'contain' para ver imagem inteira */
+    object-position: 50% 50%; /* Controla a área visível */
+    position: absolute;
+
+    /* margin-left: -133px; manipular a posicao da imagem */
+    /* margin-top: 100px; manipular a posicao da imagem */
 }
