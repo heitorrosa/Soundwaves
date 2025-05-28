@@ -46,8 +46,7 @@
     <div style="padding-bottom: 2rem"></div>
 
     <div class="gridArtistas">
-        <a href="pages/wiki/tamplateWiki.html">
-            <div id="cardArtistas">
+            <div id="cardArtistas" class="cardArtistas_Drake">
                 <p id="titulo">Drake</p>
 
                 <div class="porta-retrato">
@@ -56,10 +55,9 @@
 
                 <p>Rapper e ícone do hip-hop moderno, mistura R&B com rap, dominando charts globais e definindo a cultura pop.</p>
             </div>
-        </a>
             
 
-        <div id="cardArtistas">
+        <div id="cardArtistas" class="cardArtistas_Kanye">
             <p id="titulo">Kanye West</p>
 
             <div class="porta-retrato">
@@ -70,7 +68,7 @@
             <p>Visionário controverso, revolucionou produção musical e hip-hop, influenciando moda e cultura além das fronteiras da música.</p>
         </div>
 
-        <div id="cardArtistas">
+        <div id="cardArtistas" class="cardArtistas_Beyonce">
             <p id="titulo">Beyoncé</p>
 
             <div class="porta-retrato">
@@ -80,7 +78,7 @@
             <p>Lenda do R&B e símbolo de empoderamento, combina performances épicas com mensagens políticas, elevando a arte a novos patamares.</p>
         </div>
 
-        <div id="cardArtistas">
+        <div id="cardArtistas" class="cardArtistas_Taylor">
             <p id="titulo">Taylor Swift</p>
 
             <div class="porta-retrato">
@@ -96,7 +94,7 @@
             <p>Rainha do pop e contadora de histórias, evoluiu do country ao pop, conquistando fãs com letras pessoais e reinvenções.</p>
         </div>
 
-        <div id="cardArtistas">
+        <div id="cardArtistas" class="cardArtistas_Tydus">
             <p id="titulo">Tydus</p>
 
             <div class="porta-retrato">
@@ -106,7 +104,7 @@
             <p>Estrela infantil da internet, viralizou com covers e originalidade, representando a nova geração de criadores multimídia.</p>
         </div>
 
-        <div id="cardArtistas">
+        <div id="cardArtistas" class="cardArtistas_2Pac">
             <p id="titulo">2Pac</p>
 
             <div class="porta-retrato">
@@ -141,3 +139,37 @@
 </footer>
 
 </html>
+
+
+<script>
+    // Ciolfi, isso eh uma função para redirecionar para a página dos artistas (Evitando usar <a href="" para evitar conflitos com o text-decoration)
+
+    document.getElementsByClassName('cardArtistas_Drake')[0].addEventListener('click', function () {
+        window.location.href = 'pages/wiki/tamplateWiki.html';
+    });
+
+    document.getElementsByClassName('cardArtistas_Kanye')[0].addEventListener('click', function () {
+        window.location.href = 'pages/wiki/tamplateWiki.html';
+    });
+
+    document.getElementsByClassName('cardArtistas_Beyonce')[0].addEventListener('click', function () {
+        window.location.href = 'pages/wiki/tamplateWiki.html';
+    });
+
+    document.getElementsByClassName('cardArtistas_Taylor')[0].addEventListener('click', function () {
+        window.location.href = 'pages/wiki/tamplateWiki.html';
+    });
+
+    document.getElementsByClassName('cardArtistas_Tydus')[0].addEventListener('click', function () {
+        window.location.href = 'pages/wiki/tamplateWiki.html';
+    });
+
+    document.getElementsByClassName('cardArtistas_2Pac')[0].addEventListener('click', function () {
+        window.location.href = 'pages/wiki/tamplateWiki.html';
+    });
+    
+    document.getElementsByClassName('cardArtistas_PDiddy')[0].addEventListener('click', function () {
+        window.location.href = 'pages/wiki/tamplateWiki.html';
+    });
+
+</script>
