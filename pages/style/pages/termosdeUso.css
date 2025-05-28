@@ -9,7 +9,8 @@
 #termosdeUso fieldset {
     margin-left: 333px;
     margin-right: 333px;
-
+    border-radius: 33px;
+    
     text-align: center;
     align-items: center;
 

@@ -36,15 +36,12 @@
 </head>
 
 <body>
-    <div style="padding-top: 10rem"></div>
+    <div style="padding-top: 15rem"></div>
 
-    <fieldset id="containerTrabalheConosco">
+    <fieldset class="trabalheConosco">
         <legend>Trabalhe Conosco</legend>
 
-        <form method="GET" class="trabalharConosco">
-
-            <h1>Venha trabalhar conosco!</h1>
-    
+        <form method="GET" id="formTrabalheConosco">
             <label>Nome:</label><br>
             <input style="width: 333px;" type="text" name="Nome" id="Nome" placeholder="Insira seu nome completo..." requried>
     
@@ -70,9 +67,9 @@
 
             <br><br>
 
-            <label>Sexo:</label>
-            <input type="radio" name="sexo" id="sexo" value="M" required> <a>M</a>
-            <input type="radio" name="sexo" id="sexo" value="F" required> <a>F</a>
+            <label>Sexo:</label><br>
+            <input type="radio" name="sexo" id="sexo" value="M" required><a>M</a>
+            <input type="radio" name="sexo" id="sexo" value="F" required><a>F</a>
     
             <label style="color: white; padding-left: 15px;">Idade:</label>
             <input type="number" name="idade" id="idade" min="15" max="60" step="1" placeholder="15-60" required>
@@ -80,8 +77,9 @@
             <br>
     
             <label for="curso">Seu artista de interesse (até 2):</label><br>
-            <select name="curso" id="curso" style="background-color: white;">
-                    <option selected>Kanye West</option>
+            <select name="curso" id="curso">
+                    <option selected></option>
+                    <option>Kanye West</option>
                     <option>Palhaço Caçarola</option>
                     <option>Tydus Tabott</option>
                     <option>JayZ</option>
@@ -90,9 +88,9 @@
             </select><br>
 
             <label for="conhecimento">Conhecimentos:</label><br>  
-            <input type="text" id="conhecimento" name="conhecimento" list="lista-conhecimentos" style="background-color: white;">
+            <input type="text" id="conhecimento" name="conhecimento" list="lista-conhecimentos">
 
-            <datalist id="lista-conhecimentos" style="background-color: white;">
+            <datalist id="lista-conhecimentos">
                 <option value="Layout de site">Layout de site</option>
                 <option value="Conhecimentos gerais sobre os artistas">Conhecimentos gerais sobre os artistas</option>
                 <option value="Programação (html e css)">Programação (html e css)</option>
@@ -103,16 +101,16 @@
             <br><br>
 
             <label>Porque deveriamos te escolher para esse emprego? (No mínimo 1000 caracteres)</label><br>
-            <textarea rows="10" style="background-color: white ;height: 300px; width: 500px;" min="1000" placeholder="Acredito que o emprego pode ser meu porquê..."></textarea>
+            <textarea rows="10" min="1000" placeholder="Acredito que o emprego pode ser meu porquê..."></textarea>
     
             <br><br>
     
             <label>Anexe seus documentos legais para verificar sua identidade:</label><br>
-            <input style="background-color: #e7faeb;" type="file" name="documentos" id="documentos" required>
+            <input type="file" name="documentos" id="documentos" required>
 
             <br><br>
             
-            <input type="checkbox" name="termosUso" id="termosUso" required> <a>Você está ciente e concorda com nossos <a href="termosdeUso.html" style="color: rgb(255, 0, 85);">termos de uso</a> <a>para envio dessa aplicação?</a></a>
+            <input type="checkbox" name="termosUso" id="termosUso" required> <a>Você está ciente e concorda com nossos <a href="termosdeUso.html" style="color: #60495A;">termos de uso</a> <a>para envio dessa aplicação?</a></a>
     
             <br><br>
                 
