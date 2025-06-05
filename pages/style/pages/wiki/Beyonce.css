@@ -1,0 +1,23 @@
+#albunsTable {
+    width: 75%;
+    justify-self: center;
+
+    border: 1px solid #ddd;
+    border-radius: 66px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    border-color: #ddd;
+}
+
+#albunsTable th, #albunsTable td {
+    background-color: #a9aca9;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#albunsTable th {
+    background-color: #60495a;
+    font-weight: bold;
+}

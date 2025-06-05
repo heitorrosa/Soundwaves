@@ -4,6 +4,7 @@
 
 .containerArtista #containerTexto {
     width: 75%;
+    margin-left: 2rem;
     background-color: transparent;
 }
 

@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<link rel="icon" href="assets/logo.png" type="image/x-icon">
-
-<link rel="stylesheet" href="style/assets.css">
-<link rel="stylesheet" href="style/pages/trabalheConosco.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>SoundWaves</title>
-
 <head>
+    <link rel="icon" href="assets/logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="style/assets.css">
+    <link rel="stylesheet" href="style/pages/trabalheConosco.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SoundWaves</title>
+
     <header class="barraNavegacao">
         <div class="image-container">
             <div class="image-wrapper">
@@ -42,22 +42,22 @@
 
         <form method="GET" id="formTrabalheConosco">
             <label>Nome:</label><br>
-            <input style="width: 333px;" type="text" name="Nome" id="Nome" placeholder="Insira seu nome completo..." requried>
+            <input style="width: 333px;" type="text" name="Nome" id="Nome" placeholder="Insira seu nome completo..." required>
     
             <br><br>
     
             <label>Email:</label><br>
-            <input style="width: 333px;" type="email" name="email" id="email" placeholder="Soundpedia@gmail.com" requried>
+            <input style="width: 333px;" type="email" name="email" id="email" placeholder="Soundpedia@gmail.com" required>
     
             <br><br>
     
             <label>Telefone:</label><br>
-            <input style="width: 333px;" type="tel" name="tel" id="tel" placeholder="(12)3456-78910" requried>
+            <input style="width: 333px;" type="tel" name="tel" id="tel" placeholder="(12)3456-78910" required>
     
             <br><br>
     
             <label>CPF:</label><br>
-            <input style="width: 333px;" type="text" name="CPF" id="CPF" placeholder="123456789-10" requried>
+            <input style="width: 333px;" type="text" name="CPF" id="CPF" placeholder="123456789-10" required>
     
             <br><br><br>
     
@@ -67,12 +67,15 @@
             <br><br>
 
             <label>Sexo:</label><br>
-            <input type="radio" name="sexo" id="sexo" value="M" required><a>M</a>
-            <input type="radio" name="sexo" id="sexo" value="F" required><a>F</a>
-    
-            <br>
-
-            <label style="color: white; padding-left: 15px;">Idade:</label>
+            <span class="radio-option">
+                <input type="radio" name="sexo" id="sexoM" value="M" required>
+                <label for="sexoM">Masculino</label>
+            </span>
+            <span class="radio-option">
+                <input type="radio" name="sexo" id="sexoF" value="F" required>
+                <label for="sexoF">Feminino</label>
+            </span>
+            <br> <br> <label style="color: white; padding-left: 15px;">Idade:</label>
             <input type="number" name="idade" id="idade" min="15" max="60" step="1" placeholder="15-60" required>
     
             <br>
@@ -111,9 +114,10 @@
 
             <br><br>
 
+            <div class="checkbox-container">
                 <input type="checkbox" name="termosUso" id="termosUso" required>
-                <label>Você está ciente e concorda com nossos <a href="termosdeUso.html" style="color: #60495A;">termos de uso</a> para envio dessa aplicação?</label>
-
+                <label for="termosUso">Você está ciente e concorda com nossos <a href="termosdeUso.html" style="color: #3f3244;">termos de uso</a> para envio dessa aplicação?</label>
+            </div>
             <br><br>
 
             <input type="submit" name="btn" id="btnEnviar" value="Envie seu formulário!">

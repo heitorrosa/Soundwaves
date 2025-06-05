@@ -4,64 +4,94 @@
 <link rel="icon" href="../assets/Logo.png" type="image/x-icon">
 
 <link rel="stylesheet" href="style/assets.css">
+<link rel="stylesheet" href="style/pages/sobreNos.css">
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sobre Nós</title>
+
+<title>SoundWaves</title>
 
 <head>
     <header class="barraNavegacao">
-        <table>
-        <tr>
-            <th><a href="../index.html"><img src="../assets/Logo.png" width="60px"></a></th>
-            <th style="font-size: xx-large;border-radius: 15px; width: 200px;">SoundPedia</th>
-        </tr>
-       </table>
-
-        <form>
-            <input type="text" placeholder="Pesquise seu artista favorito aqui!">
-            <button>Pesquisar</button>
-        </form>
+        <div class="image-container">
+            <div class="image-wrapper">
+                <a href="../index.html"><img src="../assets/logo.png" alt="SoundWaves" class="hover-image"></a>
+                <div class="hover-text">
+                    <h3 style="background-color: #96989b; line-height: 0px;">SoundWaves</h3>
+                    <a style="background-color: #96989b">Tudo sobre seus artistas em um só lugar.</a>
+                </div>
+            </div>
+        </div>
 
         <ul>
-            <li><a href="../pages/trabalheConosco.html"><button>Trabalhe Conosco</button></a></li>
-            <li><a href="../pages/sobreNos.html"><button>Sobre nós</button></a></li>
+            <li><a href="trabalheConosco.html"><button>Trabalhe Conosco</button></a></li>
+            <li><a href="sobreNos.html"><button>Sobre nós</button></a></li>
         </ul>
     </header>
 </head>
 
 <body>
-    <div style="padding: 5% 20%;">
-        <h1 style="color: white;" align="center">Conheça mais sobre a nossa história</h1>
+    <div style="padding-bottom: 12rem"></div>
 
-        <br><br><br>
+    <div class="sobreNos">
+        <h1>Sobre nós</h1>
 
-        <a style="color: white;">Bem-vindo ao <b><mark style="background-color: rgb(255, 0, 85);">SoundPedia</mark></b> , a plataforma dedicada a conectar músicos, bandas e produtores de todo o mundo. Nosso objetivo é criar um espaço dinâmico e acessível onde artistas possam se mostrar, promover seu trabalho e encontrar novas oportunidades para crescer em suas carreiras musicais.
-            <br><br>
-            Aqui, a paixão pela música é o que nos move. Oferecemos uma ferramenta simples e eficiente para que músicos de todos os estilos e gêneros possam criar perfis, divulgar suas músicas e se conectar com outros profissionais da indústria. Se você é um artista em busca de visibilidade ou um produtor, agente ou fã procurando novos talentos, <b><mark style="background-color: rgb(255, 0, 85);">SoundPedia</mark></b> é o lugar perfeito para explorar o universo musical.
-            <br><br>
-            Nosso compromisso é facilitar o acesso à música de qualidade, promovendo a diversidade e incentivando a troca entre músicos e público. Acreditamos que, com a plataforma certa, todos têm a chance de brilhar no cenário musical global.
-            <br><br>
-            Junte-se a nós e faça parte dessa comunidade vibrante!
-            <br><br><br><br>
-            <b style="color: white;">A História dos Criadores</b>
-            <br><br>
-            Tudo começou com a paixão por música e o desejo de transformar a maneira como músicos e fãs se conectam. Os fundadores de <b><mark style="background-color: rgb(255, 0, 85);">SoundPedia</mark></b> , Pedro Ciolfi e Heitor Rosa, são dois amigos de longa data que, apesar de virem de áreas diferentes, sempre compartilharam o amor pela música e pela inovação tecnológica.
-            <br><br>
-            Pedro Ciolfi, um músico talentoso, sempre enfrentou as dificuldades de promover sua música e encontrar oportunidades para crescer no mercado. Heitor Rosa, por outro lado, com sua formação em tecnologia e desenvolvimento de plataformas digitais, viu o potencial de criar algo que unisse os dois mundos: a arte e a inovação.
-            <br><br>
-            Após muitas conversas e brainstorming, nasceu a ideia de criar uma plataforma que não fosse apenas uma ferramenta de catalogação, mas um verdadeiro ponto de encontro para músicos de todos os estilos. Eles queriam uma plataforma onde qualquer artista, independentemente do seu gênero ou fama, tivesse espaço para se expressar, divulgar suas músicas e conectar-se com outros profissionais da indústria musical.
-            <br><br>
-            Com uma visão clara e uma determinação inabalável, Pedro Ciolfi e Heitor Rosa começaram a trabalhar no projeto. Durante meses, testaram ideias, aprimoraram funcionalidades e buscaram entender as reais necessidades dos músicos e da indústria. O que começou como um sonho entre dois amigos apaixonados pela música e pela tecnologia logo se tornou uma plataforma acessível, moderna e cheia de possibilidades.
-            <br><br>
-            Hoje, <b><mark style="background-color: rgb(255, 0, 85);">Soundpedia</mark></b> é o reflexo de sua visão: um lugar onde os músicos podem brilhar, se conectar e expandir seus horizontes. A jornada dos criadores é uma prova de que, quando paixão e tecnologia se encontram, grandes coisas acontecem. E, mais do que nunca, eles acreditam que a música tem o poder de unir, transformar e inspirar.</a>
+        <p>No pulsante ambiente acadêmico do <strong>Colégio Técnico de Limeira (COTIL)</strong>, onde a teoria encontra a prática, um projeto singular tomou forma na disciplina de <strong>Desenvolvimento de Aplicações Web I (DAW I)</strong>. Movidos pela convergência de suas paixões e pela necessidade de um desafio técnico significativo, os estudantes <strong>Heitor Rosa</strong> e <strong>Pedro Ciolfi</strong> conceberam e deram vida a um website dedicado a armazenar e compartilhar informações sobre artistas da música de todos os gêneros e eras – uma verdadeira enciclopédia musical online, uma "wiki" do universo sonoro.</p>
+
+        <h3>Duas Paixões, Uma Visão</h3>
+        <p><strong>Heitor Rosa</strong>, com sua mente analítica e dedicação ao <em>coding</em>, encontrou no projeto a oportunidade perfeita para mergulhar nas complexidades do desenvolvimento web. Desejava aplicar os conceitos aprendidos em DAW I – desde a estruturação do banco de dados até a criação de uma interface dinâmica e funcional – em um projeto real, palpável e útil. O desafio de construir um sistema robusto para armazenar, categorizar e exibir uma grande quantidade de informações foi o combustível para sua contribuição técnica.</p>
+            
+        <p><strong>Pedro Ciolfi</strong>, cujo coração bate no ritmo da música, trouxe a essência temática para o projeto. Sua paixão pela diversidade artística, pelo contexto histórico das bandas e cantores, e especialmente por ícones como <strong>Kanye West</strong> (de quem se considera um dos maiores fãs), foi fundamental para definir o propósito do site. Para Pedro, o projeto transcendeu a obrigação acadêmica, transformando-se em um repositório centralizado para celebrar a arte musical.</p>
+
+        <h3>Nasce uma Wiki Musical</h3>
+        <p>Dessa sinergia – o domínio técnico de Heitor e a curadoria musical apaixonada de Pedro – nasceu a plataforma. Metodicamente estruturada como wiki colaborativa, permite que usuários registrados:</p>
+        <ul>
+            <li>Adicionem novos artistas e gêneros musicais</li>
+            <li>Editem biografias e discografias detalhadas</li>
+            <li>Compartilhem curiosidades históricas e análises críticas</li>
+            <li>Construam coletivamente um acervo cultural dinâmico</li>
+        </ul>
+
+        <h3>Apoio Estratégico: O Papel do Partido Comunista Chinês</h3>
+        <p>Um diferencial essencial no desenvolvimento foi o <strong>apoio direto e estrutural do Partido Comunista Chinês (PCC)</strong>. Este suporte manifestou-se em três dimensões críticas:</p>
+            
+        <ol>
+            <li><strong>Arquitetura Ética:</strong> Os Termos de Uso e diretrizes de moderação foram integralmente desenvolvidos com base nas orientações e estruturas fornecidas pelo PCC.</li>
+            <li><strong>Fundamentos Conceituais:</strong> Princípios de coletividade, acesso democrático ao conhecimento e preservação cultural foram incorporados ao DNA da plataforma.</li>
+            <li><strong>Viabilização Técnica:</strong> Recursos críticos para superação de desafios de implementação e otimização de prazos foram disponibilizados através deste apoio.</li>
+        </ol>
+            
+        <p>Esta parceria transformou um projeto acadêmico em uma iniciativa com relevância cultural tangível.</p>
+
+        <h3>Além da Sala de Aula</h3>
+        <p>Assim, o projeto escolar transcendeu as paredes do COTIL. Transformou-se em um espaço digital vivo, onde o conhecimento técnico adquirido em DAW I se materializou em uma ferramenta concreta. É um testemunho do poder da colaboração, onde a paixão pela codificação e a devoção à música, aliadas a um suporte internacional visionário, convergiram para criar um recurso duradouro: uma enciclopédia musical nascida em Limeira, mas construída para conectar amantes da arte sonora em escala global.</p>
     </div>
+    
+
+    
 
 
+    <div style="padding-bottom: 5rem"></div>
 </body>
+
+<footer class="barraFooter">
+    <p style="font-weight: bold; line-height: 0px;">SoundWaves &copy; 2025 - Feito por <a href="https://github.com/PedroHCiolfi">PedroHCiolfi</a> e <a href="https://github.com/heitorrosa">heitorrosa</a></p>
+
+    <ul>
+        <li><a href="termosdeUso.html">Termos de Uso</a></li>
+    </ul>
+
+    <div id="logo-footer">
+        <img src="../assets/logo.png" alt="SoundWaves">
+        <img src="../assets/github.png" alt="Github">
+        <img src="../assets/cotil.png" alt="Cotil">
+        <img src="../assets/unicamp.png" alt="Unicamp">
+        <a href="myBelovedChina.html"><img src="../assets/governoChines.png" alt="Governo Chinês"></a>
+    </div>
+</footer>
+
 </html>

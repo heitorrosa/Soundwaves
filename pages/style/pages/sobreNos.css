@@ -1,0 +1,17 @@
+.sobreNos {
+    width: 50rem;
+    margin: 0 auto;
+}
+
+.sobreNos h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.sobreNos p {
+    justify-self: justify;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
