@@ -5,7 +5,7 @@
 
 <link rel="stylesheet" href="../style/assets.css">
 <link rel="stylesheet" href="../style/pages/wiki/assetsWiki.css">
-
+<link rel="stylesheet" href="../style/pages/wiki/KanyeWest.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,7 +29,6 @@
         </div>
 
         <ul>
-            <li><a href="../faq.html"><button>FAQ</button></a></li>
             <li><a href="../trabalheConosco.html"><button>Trabalhe Conosco</button></a></li>
             <li><a href="../sobreNos.html"><button>Sobre nós</button></a></li>
         </ul>
@@ -474,7 +473,7 @@
 
 <h3>10.3. Declarações Controversas e Antissemitismo</h3>
 <p>
-    Entre 2022 e 2023, Kanye proferiu declarações abertas de teor antissemitas, defendendo teorias conspiratórias sobre o “controle” judeu na indústria musical e na mídia. Em outubro de 2022, fez postagens que glorificavam uma suástica e adotou símbolos nazistas em eventos.<br><br>
+    Entre 2022 e 2023, Kanye proferiu declarações abertas de teor antissemitas, defendendo crenças sobre o “controle” <a id="wellwellwell" onmouseover="play()" onmouseout="pause()">judeu</a> na indústria musical e na mídia. Em outubro de 2022, fez postagens que glorificavam uma suástica e adotou símbolos nazistas em eventos.<br><br>
     Como resultado, grandes parceiros como Adidas, Gap, Balenciaga, Converse e Spotify romperam contratos, resultando na perda de centenas de milhões de dólares em acordos comerciais.<br><br>
     Em meados de 2024, a repercussão negativa provocou que Kanye se afastasse de redes sociais por breves períodos, mas o retorno sempre trazia novas polêmicas, alimentando seu estigma público como figura imprevisível e conflituosa.
 </p>
@@ -559,8 +558,6 @@
 
     <ul>
         <li><a href="../termosdeUso.html">Termos de Uso</a></li>
-        |
-        <li><a href="../faq.html">FAQ</a></li>
     </ul>
 
     <div id="logo-footer">
@@ -573,3 +570,26 @@
 </footer>
 
 </html>
+
+<audio id="audio" src="../../assets/wiki/KanyeWest/HavaNagila.m4a"></audio>
+
+<div id="imagem" class="happyMerchant-fullscreen">
+    <img src="../../assets/wiki/KanyeWest/happyMerchant.png" class="happyMerchant" alt="Happy Merchant">
+</div>
+
+<script>
+    // Script para rodar uma musiquinha fodinha e mostrar uma imagenzinha
+
+       function play(){
+           var audio = document.getElementById("audio");
+           audio.play();
+           document.getElementById("imagem").style.opacity = 1;
+       }
+
+       function pause(){
+           var audio = document.getElementById("audio");
+           document.getElementById("imagem").style.opacity = 0;
+           audio.pause();
+       }
+
+</script>
