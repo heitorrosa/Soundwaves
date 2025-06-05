@@ -70,6 +70,8 @@
             <input type="radio" name="sexo" id="sexo" value="M" required><a>M</a>
             <input type="radio" name="sexo" id="sexo" value="F" required><a>F</a>
     
+            <br>
+
             <label style="color: white; padding-left: 15px;">Idade:</label>
             <input type="number" name="idade" id="idade" min="15" max="60" step="1" placeholder="15-60" required>
     
@@ -108,12 +110,13 @@
             <input type="file" name="documentos" id="documentos" required>
 
             <br><br>
-            
-            <input type="checkbox" name="termosUso" id="termosUso" required> <a>Você está ciente e concorda com nossos <a href="termosdeUso.html" style="color: #60495A;">termos de uso</a> <a>para envio dessa aplicação?</a></a>
-    
+
+                <input type="checkbox" name="termosUso" id="termosUso" required>
+                <label>Você está ciente e concorda com nossos <a href="termosdeUso.html" style="color: #60495A;">termos de uso</a> para envio dessa aplicação?</label>
+
             <br><br>
-                
-            <input class="botaoEnviar" type="submit" name="btn" id="btnEnviar" value="Envie seu formulário!">
+
+            <input type="submit" name="btn" id="btnEnviar" value="Envie seu formulário!">
         </form>
     </fieldset>
     

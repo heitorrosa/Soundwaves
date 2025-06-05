@@ -5,7 +5,7 @@
     transition: color 1s ease-in-out;
 }
 
-.happyMerchant-fullscreen {
+.israel-fullscreen {
     position: fixed;
     top: 0;
     left: 0;
@@ -19,7 +19,7 @@
     display: flex;
 }
   
-.happyMerchant {
+.israel {
     width: 100%;
     height: 100%;
     object-fit: cover;

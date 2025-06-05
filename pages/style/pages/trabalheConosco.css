@@ -34,6 +34,8 @@
     border-radius: 10px;
     border: 1px solid white;
     font-size: 1rem;
+
+    background-color: aliceblue;
 }
 
 .trabalheConosco #formTrabalheConosco textarea {
@@ -41,7 +43,7 @@
     padding: 0.5rem;
     margin-bottom: 1rem;
     border-radius: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid white;
     font-size: 1rem;
     height: 150px;
 }
@@ -53,6 +55,8 @@
     border-radius: 10px;
     border: 1px solid white;
     font-size: 1rem;
+
+    background-color: aliceblue;
 }
 
 .trabalheConosco #formTrabalheConosco #idade {
@@ -62,6 +66,20 @@
     border-radius: 10px;
     border: 1px solid white;
     font-size: 1rem;
+}
+
+.trabalheConosco #formTrabalheConosco #documentos{
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    border: 1px solid white;
+    font-size: 1rem;
+
+    background-color: #60495A;
+    color: white;
+
+    cursor: pointer;
 }
 
 .trabalheConosco #formTrabalheConosco input::placeholder {
@@ -78,4 +96,20 @@
 
 .trabalheConosco #formTrabalheConosco input::content {
     text-shadow: none;
+}
+
+.trabalheConosco #formTrabalheConosco #btnEnviar {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+
+    background-color: #3f3244;
+    color: white;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s ease-in-out;
 }
