@@ -1,5 +1,5 @@
 # Soundwaves
-COTIL (Projeto de DAW I) - Um website interativo que serve como Wiki para diversos artistas como: Drake, Kanye West, Beyoncé, Taylor Swift, Tydus, 2Pac, P.Diddy e outros... 
+COTIL (Projeto de DAW I - 1 Semestre) - Um website interativo que serve como Wiki para diversos artistas como: Drake, Kanye West, Beyoncé, Taylor Swift, Tydus, 2Pac, P.Diddy e outros... 
 
 <br>
 
